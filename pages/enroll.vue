@@ -7,6 +7,7 @@
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
+    netlify
   >
    <input type="hidden" name="form-name" value="vue-tea" />
     <h2 class="my-6 text-3xl text-center">Start Enrollment</h2>
