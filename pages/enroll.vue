@@ -3,12 +3,14 @@
   <form
     class="w-11/12 md:w-1/2 my-6 mx-auto"
     name="enroll"
+    action="/"
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field
     "
     netlify
   >
+  <input type="hidden" name="form-name" value="enroll" />
     <h2 class="my-6 text-3xl text-center">Start Enrollment</h2>
     <p class="my-6 text-center">
       Please fill out this form to start the enrollment process and we will get
