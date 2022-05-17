@@ -264,6 +264,7 @@
           py-2.5
           text-center
         "
+        @click.prevent="submit"
       >
         Submit
       </button>
@@ -274,8 +275,11 @@
 <script>
 export default {
   methods: {
-    submit() {
-      console.log("Submitted.");
+    async submit() {
+      const send = await fetch("https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email")
+      .then((res) => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(res))
     },
   },
 };
