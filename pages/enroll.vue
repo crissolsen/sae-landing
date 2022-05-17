@@ -276,7 +276,7 @@
 export default {
   methods: {
     async submit() {
-      const send = await fetch("https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email")
+      const send = await this.$axios.post("https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email", "Nothing really...")
       .then((res) => res.json())
       .then(data => console.log(data))
       .catch(err => console.log(res))
