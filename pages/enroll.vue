@@ -3,11 +3,10 @@
   <form
     class="w-11/12 md:w-1/2 my-6 mx-auto"
     name="enroll"
-    action="/"
+    action="/success"
     method="post"
     data-netlify="true"
-    data-netlify-honeypot="bot-field
-    "
+    data-netlify-honeypot="bot-field"
     netlify
   >
   <input type="hidden" name="form-name" value="enroll" />
