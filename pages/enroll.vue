@@ -5,7 +5,9 @@
     name="enroll"
     method="post"
     data-netlify="true"
-    data-netlify-honeypot="bot-field"
+    data-netlify-honeypot="bot-field
+    "
+    netlify
   >
     <h2 class="my-6 text-3xl text-center">Start Enrollment</h2>
     <p class="my-6 text-center">
