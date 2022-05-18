@@ -5,7 +5,7 @@
   publish = "dist" # If you use a _redirect file, provide the path to your static content folder
 
 [build.environment]
-  CONTACT_EMAIL = "chris@homecode.co.za"
+  CONTACT_EMAIL = "new@criss.co.za"
 
 [context.production.environment]
-  CONTACT_EMAIL = "chris@homecode.co.za"
+  CONTACT_EMAIL = "new@criss.co.za"

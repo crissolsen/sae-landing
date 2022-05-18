@@ -27,9 +27,6 @@ const handler = async (event) => {
   // }
   let body = JSON.parse(event.body)
 
-  console.log(body)
-  
-
   try {
     validateLength('body.name', body.name, NAME_MIN_LENGTH, NAME_MAX_LENGTH)
   } catch (error) {
