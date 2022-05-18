@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-around items-center my-5 md:pl-24 md:my-10 w-full md:w-11/12 mx-auto">
-    <HeroImage />
+    <HeroImage class="pl-3"/>
     <CTAButton />
   </div>
 </template>
@@ -18,17 +18,4 @@ export default {
 
 
 <style>
-.svg-animate {
-  animation: breathe 2s linear infinite;
-  transform: translate(-121.63 -93.4);
-}
-
-@keyframes breathe {
-  from {
-    /* transform: scale(0.9) */
-  }
-  to {
-    /* transform: scale(1) */
-  }
-}
 </style>

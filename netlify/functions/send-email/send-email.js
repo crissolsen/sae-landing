@@ -21,7 +21,14 @@ const handler = async (event) => {
     }
   }
 
-  const body = JSON.parse(event.body)
+  // return {
+  //   statusCode: 200,
+  //   body: event.body
+  // }
+  let body = JSON.parse(event.body)
+
+  console.log(body)
+  
 
   try {
     validateLength('body.name', body.name, NAME_MIN_LENGTH, NAME_MAX_LENGTH)
@@ -51,8 +58,8 @@ const handler = async (event) => {
   }
 
   const descriptor = {
-    from: `"${body.email}" <no-reply@gql-modules.com>`,
-    to: process.env.CONTACT_EMAIL,
+    from: `chris@homecode.co.za`,
+    to: body.email,
     subject: `${body.name} sent you a message from gql-modules.com`,
     text: body.details,
   }

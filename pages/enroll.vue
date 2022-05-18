@@ -6,6 +6,7 @@
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
+    v-if="!sent"
   >
    <input type="hidden" name="form-name" value="ask-question" />
     <h2 class="my-6 text-3xl text-center">Start Enrollment</h2>
@@ -35,6 +36,7 @@
           "
           placeholder=" "
           required=""
+          v-model="name"
         />
         <label
           for="floating_first_name"
@@ -57,10 +59,10 @@
             peer-placeholder-shown:translate-y-0
             peer-focus:scale-85 peer-focus:-translate-y-6
           "
-          >First name</label
+          >Parent/Guardian Name</label
         >
       </div>
-      <div class="relative z-0 w-full mb-6 group">
+      <!-- <div class="relative z-0 w-full mb-6 group">
         <input
           type="text"
           name="floating_last_name"
@@ -104,7 +106,7 @@
           "
           >Last name</label
         >
-      </div>
+      </div> -->
     </div>
     <div class="relative z-0 mb-6 group">
       <input
@@ -124,6 +126,7 @@
         "
         placeholder=" "
         required=""
+        v-model="details"
       />
       <label
         for="floating_student"
@@ -170,6 +173,7 @@
           "
           placeholder=" "
           required=""
+          v-model="phone"
         />
         <label
           for="floating_phone"
@@ -215,6 +219,7 @@
           "
           placeholder=" "
           required=""
+          v-model="email"
         />
         <label
           for="floating_email"
@@ -270,16 +275,43 @@
       </button>
     </div>
   </form>
+  <div v-else>
+    Thank you for sending the message, we'll get back to you soon soon!
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      email: '',
+      details: '',
+      name: '',
+      phone: '',
+      sent: false
+    }
+  },
   methods: {
     async submit() {
-      const send = await this.$axios.post("https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email", "Nothing really...")
-      .then((res) => res.json())
-      .then(data => console.log(data))
-      .catch(err => console.log(res))
+    
+      const url = "http://localhost:8888/.netlify/functions/send-email"
+    //   const url = "https://glowing-frangollo-c88705.netlify.app/netlify/functions/send-email"
+    const body = {
+      email: this.email,
+      name: this.name,
+      details: `There's an email from someone! Their phone number is ${ this.phone } and they said: ${ this.details }`
+    }
+    console.log(body)
+    // return
+      const send = await this.$axios.post(url, body)
+      .then(data => {
+        if (data.status == 200) {
+          this.sent = true;
+        }
+      })
+      .catch(err => console.log(err))
+
+      console.log("sent!")
     },
   },
 };
