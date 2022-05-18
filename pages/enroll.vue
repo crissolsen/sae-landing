@@ -295,7 +295,7 @@ export default {
     async submit() {
     
       // const url = "http://localhost:8888/.netlify/functions/send-email"
-      const url = "https://glowing-frangollo-c88705.netlify.app/netlify/functions/send-email"
+      const url = "https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email"
     const body = {
       email: this.email,
       name: this.name,
