@@ -8,6 +8,7 @@
     data-netlify-honeypot="bot-field"
     v-if="!sent"
   >
+  <h2>{ error }</h2>
    <input type="hidden" name="form-name" value="ask-question" />
     <h2 class="my-6 text-3xl text-center">Start Enrollment</h2>
     <p class="my-6 text-center">
@@ -288,7 +289,8 @@ export default {
       details: '',
       name: '',
       phone: '',
-      sent: false
+      sent: false,
+      error: "There's an issue!"
     }
   },
   methods: {
