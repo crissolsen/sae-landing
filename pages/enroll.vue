@@ -2,13 +2,10 @@
 <template>
   <form
     class="w-11/12 md:w-1/2 my-6 mx-auto"
-    name="ask-question"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
+    action="https://formsubmit.co/fe0534e16eb7e999e8d2461ce48f3360" method="POST"
     v-if="!sent"
   >
-  <h2>{ error }</h2>
+  <h2>{{ error }}</h2>
    <input type="hidden" name="form-name" value="ask-question" />
     <h2 class="my-6 text-3xl text-center">Start Enrollment</h2>
     <p class="my-6 text-center">
@@ -270,7 +267,6 @@
           py-2.5
           text-center
         "
-        @click.prevent="submit"
       >
         Submit
       </button>
@@ -296,8 +292,8 @@ export default {
   methods: {
     async submit() {
     
-      // const url = "http://localhost:8888/.netlify/functions/send-email"
-      const url = "https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email"
+      const url = "http://localhost:8888/.netlify/functions/send-email"
+      // const url = "https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email"
     const body = {
       email: this.email,
       name: this.name,
@@ -312,8 +308,6 @@ export default {
         }
       })
       .catch(err => console.log(err))
-
-      console.log("sent!")
     },
   },
 };
