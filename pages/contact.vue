@@ -5,20 +5,20 @@
     action="https://formsubmit.co/fe0534e16eb7e999e8d2461ce48f3360" method="POST"
     v-if="!sent"
   >
-  <h2>{{ error }}</h2>
-   <input type="hidden" name="form-name" value="ask-question" />
-    <h2 class="my-6 text-3xl text-center">Start Enrollment</h2>
+  <!-- <h2>{{ error }}</h2> -->
+   <input type="hidden" name="form-name" value="contact-us-form" />
+    <h2 class="my-6 text-3xl text-center">Contact Us</h2>
     <p class="my-6 text-center">
-      Please fill out this form to start the enrollment process and we will get
+      Please fill out this form and we will get
       back to you quickly.
     </p>
 
-    <div class="grid xl:grid-cols-2 xl:gap-6">
+    <div class="grid xl:grid-cols-1 xl:gap-6">
       <div class="relative z-0 w-full mb-6 group">
         <input
           type="text"
-          name="floating_first_name"
-          id="floating_first_name"
+          name="enquiry-name"
+          id="enquiry-name"
           class="
             block
             py-2.5
@@ -37,7 +37,7 @@
           v-model="name"
         />
         <label
-          for="floating_first_name"
+          for="enquiry-name"
           class="
             peer-focus:font-medium
             absolute
@@ -57,7 +57,7 @@
             peer-placeholder-shown:translate-y-0
             peer-focus:scale-85 peer-focus:-translate-y-6
           "
-          >Parent/Guardian Name</label
+          >Your Name</label
         >
       </div>
       <!-- <div class="relative z-0 w-full mb-6 group">
@@ -106,7 +106,7 @@
         >
       </div> -->
     </div>
-    <div class="relative z-0 mb-6 group">
+    <!-- <div class="relative z-0 mb-6 group">
       <input
         name="floating_student"
         class="
@@ -148,14 +148,14 @@
         "
         >Prospective Student(s) and Grade(s)</label
       >
-    </div>
+    </div> -->
 
     <div class="grid xl:grid-cols-2 xl:gap-6">
       <div class="relative z-0 w-full mb-6 group">
         <input
           type="tel"
-          name="floating_phone"
-          id="floating_phone"
+          name="phone"
+          id="phone"
           class="
             block
             py-2.5
@@ -174,7 +174,7 @@
           v-model="phone"
         />
         <label
-          for="floating_phone"
+          for="phone"
           class="
             peer-focus:font-medium
             absolute
@@ -200,8 +200,8 @@
       <div class="relative z-0 w-full mb-6 group">
         <input
           type="email"
-          name="floating_email"
-          id="floating_company"
+          name="email"
+          id="email"
           class="
             block
             py-2.5
@@ -220,7 +220,7 @@
           v-model="email"
         />
         <label
-          for="floating_email"
+          for="email"
           class="
             peer-focus:font-medium
             absolute
@@ -312,3 +312,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+form {
+  min-height: 50vh;
+}
+</style>

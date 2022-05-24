@@ -4,6 +4,7 @@
     <main>
         <Nuxt />
     </main>
+    <TheFooter />
 </div>
 </template>
 
@@ -13,5 +14,10 @@
 
 * {
     font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
 }
 </style>
