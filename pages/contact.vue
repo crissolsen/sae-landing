@@ -1,20 +1,17 @@
 
 <template>
   <form
-    class="w-11/12 md:w-1/2 my-6 mx-auto"
-    action="https://formsubmit.co/fe0534e16eb7e999e8d2461ce48f3360" method="POST"
+    class="w-11/12 md:w-1/2 mt-6 mx-auto max-w-md"
+    action="https://formsubmit.co/fe0534e16eb7e999e8d2461ce48f3360"
+    method="POST"
     v-if="!sent"
   >
-  <!-- <h2>{{ error }}</h2> -->
-   <input type="hidden" name="form-name" value="contact-us-form" />
+    <!-- <h2>{{ error }}</h2> -->
+    <input type="hidden" name="form-name" value="contact-us-form" />
     <h2 class="my-6 text-3xl text-center">Contact Us</h2>
-    <p class="my-6 text-center">
-      Please fill out this form and we will get
-      back to you quickly.
-    </p>
 
-    <div class="grid xl:grid-cols-1 xl:gap-6">
-      <div class="relative z-0 w-full mb-6 group">
+    <div class="grid xl:grid-cols-auto xl:gap-6">
+      <div class="relative z-0 w-full mb-10 group">
         <input
           type="text"
           name="enquiry-name"
@@ -150,7 +147,7 @@
       >
     </div> -->
 
-    <div class="grid xl:grid-cols-2 xl:gap-6">
+    <div class="grid xl:grid-cols-auto xl:gap-6">
       <div class="relative z-0 w-full mb-6 group">
         <input
           type="tel"
@@ -243,6 +240,49 @@
           >Email</label
         >
       </div>
+      <div class="relative z-0 w-full mb-6 group">
+        <textarea
+          name="details"
+          v-model="details"
+          id="details"
+          class="
+            block
+            py-2.5
+            px-0
+            w-full
+            text-gray-900
+            bg-transparent
+            border-0 border-b-2 border-gray-300
+            dark:text-white dark:border-gray-600 dark:focus:border-blue-500
+            focus:outline-none focus:ring-0 focus:border-blue-600
+            peer
+          "
+        >
+        </textarea>
+        <label
+          for="details"
+          class="
+            peer-focus:font-medium
+            absolute
+            text-gray-500
+            dark:text-gray-400
+            duration-300
+            transform
+            -translate-y-6
+            scale-80
+            top-3
+            -z-10
+            origin-[0]
+            peer-focus:left-0
+            peer-focus:text-blue-600
+            peer-focus:dark:text-blue-500
+            peer-placeholder-shown:scale-100
+            peer-placeholder-shown:translate-y-0
+            peer-focus:scale-80 peer-focus:-translate-y-6
+          "
+          >Message
+        </label>
+      </div>
     </div>
     <div class="w-full flex justify-center">
       <button
@@ -281,34 +321,13 @@
 export default {
   data() {
     return {
-      email: '',
-      details: '',
-      name: '',
-      phone: '',
+      email: "",
+      details: "",
+      name: "",
+      phone: "",
       sent: false,
-      error: "There's an issue!"
-    }
-  },
-  methods: {
-    async submit() {
-    
-      const url = "http://localhost:8888/.netlify/functions/send-email"
-      // const url = "https://glowing-frangollo-c88705.netlify.app/.netlify/functions/send-email"
-    const body = {
-      email: this.email,
-      name: this.name,
-      details: `There's an email from someone! Their phone number is ${ this.phone } and they said: ${ this.details }`
-    }
-    console.log(body)
-    // return
-      const send = await this.$axios.post(url, body)
-      .then(data => {
-        if (data.status == 200) {
-          this.sent = true;
-        }
-      })
-      .catch(err => console.log(err))
-    },
+      error: "There's an issue!",
+    };
   },
 };
 </script>
