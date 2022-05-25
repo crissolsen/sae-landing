@@ -54,7 +54,7 @@
             peer-placeholder-shown:translate-y-0
             peer-focus:scale-85 peer-focus:-translate-y-6
           "
-          >Your Name</label
+          >Name</label
         >
       </div>
       <!-- <div class="relative z-0 w-full mb-6 group">
@@ -287,26 +287,7 @@
     <div class="w-full flex justify-center">
       <button
         type="submit"
-        class="
-          w-full
-          md:w-1/2
-          rounded
-          bg-blue-500
-          px-2
-          py-3
-          mx-auto
-          shadow-lg
-          cursor-pointer
-          hover:bg-blue-200
-          text-white
-          hover:text-black
-          transform
-          transition
-          hover:translate-y-1
-          px-5
-          py-2.5
-          text-center
-        "
+        class="submit-button"
       >
         Submit
       </button>

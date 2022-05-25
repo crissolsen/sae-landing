@@ -1,0 +1,45 @@
+[
+    {
+      "component": "h2",
+      "children": " Part 2",
+      "class": "text-center text-4xl"
+    },
+    {
+        "component": "p",
+        "children": "Part 2"
+    },
+    {
+      "label": "Second Name",
+      "name": "second_name",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Second Email",
+      "name": "second_email",
+      "type": "email",
+      "validation": "bail|required|email",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Second Number",
+      "name": "second_student_id",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+        "type":"hidden",
+        "name":"_captcha",
+        "value":"false"
+    },
+    {
+      "type": "submit",
+      "text" : "next",
+      "class": "submit-button mt-6"
+    }
+  ]

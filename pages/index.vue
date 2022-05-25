@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="flex justify-around items-center md:pl-24 md:my-10 w-full md:w-11/12 mx-auto">
+  <div class="flex justify-around items-center mt-10 md:pl-24 md:my-10 w-full md:w-11/12 mx-auto">
     <HeroImage class="pl-3"/>
     <CTAButton /> 
   </div>

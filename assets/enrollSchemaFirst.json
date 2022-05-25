@@ -1,0 +1,40 @@
+[
+    {
+      "component": "h2",
+      "children": "Student Enrollment",
+      "class": "text-center text-4xl"
+    },
+    {
+        "component": "p",
+        "children": "You can start the enrollment process here by filling out this essential information"
+    },
+    {
+      "label": "Your name",
+      "name": "name",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Your email",
+      "name": "email",
+      "type": "email",
+      "validation": "bail|required|email",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Student ID Number",
+      "name": "student_id",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "type": "submit",
+      "label": "Next",
+      "class": "submit-button mt-6"
+    }
+  ]

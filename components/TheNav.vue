@@ -2,7 +2,7 @@
   <nav class="w-full flex justify-between border-b-2 p-4">
     <div class="flex items-center md:gap-4">
       <!-- Logo and title -->
-      <SAELogo class="h-10 w-auto cursor-pointer" @click="$router.push('/')"/>
+      <SAELogo class="h-12 w-auto cursor-pointer" @click="$router.push('/')"/>
       <h1 class="text-lg md:text-2xl text-center py-2">Sedgefield Academy of Excellence</h1>
     </div>
     <!-- Fullscreen links -->
