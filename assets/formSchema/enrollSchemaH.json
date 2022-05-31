@@ -1,0 +1,49 @@
+[
+    {
+      "component": "h2",
+      "children": "Extended Learner",
+      "class": "text-center text-4xl"
+    },
+    {
+        "component": "h3",
+        "children": "Grade 10-12 Subject Selection",
+        "class": "text-center text-2xl"
+      },
+    {
+      "label": "Compulsory Subjects",
+      "name": "Extended Learner Compulsory Subjects",
+      "validation": "required",
+      "type": "textarea",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+        "label": "Elective Subjects",
+        "name": "Extended Learner Elective Subjects",
+        "type": "textarea",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+        "label": "Acceptance of fees per hour for Extended Learners:",
+        "name": "Extra lesson accept fees",
+        "type":"checkbox",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+        "type":"hidden",
+        "name":"_captcha",
+        "value":"false"
+    },
+      {
+        "type": "submit",
+        "text" : "next",
+        "class": "submit-button mt-6"
+      }
+]

@@ -32,12 +32,10 @@
 
 <script>
 import SAELogo from "~/assets/logo.svg?inline";
-import CTAButton from "./CTAButton.vue";
 
 export default {
   components: {
-    SAELogo,
-    CTAButton
+    SAELogo
 },
   data() {
     return {
@@ -59,7 +57,7 @@ export default {
         },
         {
           id: 3,
-          title: "Enroll Now",
+          title: "Apply Now",
           link: 'enroll'
         }
       ],

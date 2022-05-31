@@ -1,0 +1,50 @@
+[
+    {
+      "component": "h2",
+      "children": "Casual Learner Lessons",
+      "class": "text-center text-4xl"
+    },
+    {
+      "label": "Subjects",
+      "name": "Casual Learner Subjects",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+        "label": "Amount of Lessons Per Week",
+        "name": "Casual Learner Per Week",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+        "label": "Days of the Week",
+        "name": "Casual Learner Days of Week",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+        "label": "Acceptance of fees per hour for Casual Learner ",
+        "name": "Extra lesson accept fees",
+        "type":"checkbox",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+      "type":"hidden",
+      "name":"_captcha",
+      "value":"false"
+  },
+      {
+        "type": "submit",
+        "text" : "next",
+        "class": "submit-button mt-6"
+      }
+]

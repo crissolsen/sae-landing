@@ -1,0 +1,50 @@
+[
+    {
+      "component": "h2",
+      "children": "Extra Lessons Required",
+      "class": "text-center text-4xl"
+    },
+    {
+      "label": "Subjects",
+      "name": "Extra Lesson Subjects",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+        "label": "Amount of Lessons Per Week",
+        "name": "Extra Lessons Per Week",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+        "label": "Days of the Week",
+        "name": "Extra Lessons Days of Week",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+        "label": "Acceptance of fees per hour for Extra Lessons ",
+        "name": "Extra lesson accept fees",
+        "type":"checkbox",
+        "validation": "required",
+        "class": "labels",
+        "inputClass": "inputs",
+        "errorClass" : "errors"
+      },
+      {
+        "type":"hidden",
+        "name":"_captcha",
+        "value":"false"
+    },
+      {
+        "type": "submit",
+        "text" : "next",
+        "class": "submit-button mt-6"
+      }
+]

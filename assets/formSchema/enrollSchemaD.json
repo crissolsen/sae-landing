@@ -1,0 +1,129 @@
+[
+    {
+      "component": "h2",
+      "children": "Particulars of person who will be responsible for payment",
+      "class": "text-center text-4xl"
+    },
+    {
+      "label": "Surname",
+      "name": "Payment Surname",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Full Names",
+      "name": "Payment Full Names",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "ID Number",
+      "name": "Payment ID Number",
+      "validation": "required",
+      "type": "number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Occupation",
+      "name": "Payment Occupation",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Cell Number",
+      "name": "Payment Cell Number",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Work Number",
+      "name": "Payment Work Number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Home Number",
+      "name": "Payment Home Number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Marital Status",
+      "name": "Payment Marital Status",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Fax Number",
+      "name": "Payment Fax Number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Email",
+      "name": "Payment Email Addess",
+      "validation": "required",
+      "type": "email",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Postal Address",
+      "name": "Payment Postal Address",
+      "validation": "required",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Residential Address",
+      "name": "Payment Residential Address",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Name of Employer/Company",
+      "name": "Payment Employer",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Employers Address",
+      "name": "Payment Employer Address",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "type":"hidden",
+      "name":"_captcha",
+      "value":"false"
+  },
+  {
+    "type":"hidden",
+    "name":"_captcha",
+    "value":"false"
+},
+    {
+      "type": "submit",
+      "text" : "next",
+      "class": "submit-button mt-6"
+    }
+  ]

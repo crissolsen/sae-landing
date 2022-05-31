@@ -1,0 +1,117 @@
+[
+    {
+      "component": "h2",
+      "children": "Mother's Details",
+      "class": "text-center text-4xl"
+    },
+    {
+      "label": "Surname",
+      "name": "Mother Surname",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Full Names",
+      "name": "Mother Full Names",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "ID Number",
+      "name": "Mother ID Number",
+      "type": "number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Occupation",
+      "name": "Mother Occupation",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Cell Number",
+      "name": "Mother Cell Number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Work Number",
+      "name": "Mother Work Number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Home Number",
+      "name": "Mother Home Number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Marital Status",
+      "name": "Mother Marital Status",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Fax Number",
+      "name": "Mother Fax Number",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Email",
+      "name": "Mother Email Addess",
+      "type": "email",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Postal Address",
+      "name": "Mother Postal Address",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Residential Address",
+      "name": "Mother Residential Address",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Name of Employer/Company",
+      "name": "Mother Employer",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "label": "Employers Address",
+      "name": "Mother Employer Address",
+      "class": "labels",
+      "inputClass": "inputs",
+      "errorClass" : "errors"
+    },
+    {
+      "type":"hidden",
+      "name":"_captcha",
+      "value":"false"
+  },
+    {
+      "type": "submit",
+      "text" : "next",
+      "class": "submit-button mt-6"
+    }
+  ]

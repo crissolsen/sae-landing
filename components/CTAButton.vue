@@ -19,6 +19,6 @@
     "
     @click="$router.push('enroll')"
   >
-    Enroll Now
+    Apply Now
   </button>
 </template>
