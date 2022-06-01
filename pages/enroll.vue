@@ -259,8 +259,6 @@ export default {
       this.position = this.applicationTypes[data][0];
     },
     checkPosition(currentPos) {
-    FormAutoFill.fill()
-
       let arrayToCheck = this.applicationTypes[this.applicationSelectedType];
       for (let i = 0; i <= arrayToCheck.length; i++) {
         if (arrayToCheck[i] == currentPos) {
