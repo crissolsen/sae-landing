@@ -5,17 +5,20 @@
       py-4
       flex flex-columns
       justify-center
-      md:justify-end
-      gap-8
+      md:justify-between
+      gap-4
       w-full
       md:w-3/4
       mx-auto
       border-t-2
       flex-wrap-reverse
+      md:flex-no-wrap
     "
   >
   <div class="justify-self-start">Sedgefield Academy of Excellence <br />© 2022</div>
-    <div class="w-1/2">
+    <DocDownloads />
+
+    <div class="w-1/4">
       <iframe
         src="https://maps.google.com/maps?q=Sedgefield%20Academy%20of%20Excellence&t=&z=15&ie=UTF8&iwloc=&output=embed"
         frameborder="0"

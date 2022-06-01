@@ -190,8 +190,6 @@ import schemaF from "~/assets/formSchema/enrollSchemaF.json";
 import schemaG from "~/assets/formSchema/enrollSchemaG.json";
 import schemaH from "~/assets/formSchema/enrollSchemaH.json";
 
-import FormAutoFill from "../node_modules/form-autofill/dist/globals/main.js"
-
 export default {
   data() {
     return {
@@ -256,9 +254,6 @@ export default {
         .catch((e) => console.log(e));
     },
     applicationType(data) {
-    FormAutoFill.fill()
-
-      console.log(data);
       this.applicationSelected = true;
       this.applicationSelectedType = data;
       this.position = this.applicationTypes[data][0];
@@ -267,7 +262,6 @@ export default {
     FormAutoFill.fill()
 
       let arrayToCheck = this.applicationTypes[this.applicationSelectedType];
-      console.log(arrayToCheck);
       for (let i = 0; i <= arrayToCheck.length; i++) {
         if (arrayToCheck[i] == currentPos) {
           if (i == arrayToCheck.length - 1) {
@@ -280,9 +274,6 @@ export default {
       }
     },
   },
-  mounted() {
-    console.log(FormAutoFill.fill)
-  }
 };
 </script>
 
