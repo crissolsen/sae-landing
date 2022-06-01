@@ -270,6 +270,7 @@ export default {
           this.position = arrayToCheck[i + 1];
         }
       }
+      scrollTo(top)
     },
   },
 };

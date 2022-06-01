@@ -18,7 +18,7 @@
   <div class="justify-self-start">Sedgefield Academy of Excellence <br />© 2022</div>
     <DocDownloads />
 
-    <div class="w-1/4">
+    <div class="w-64 md:w-80">
       <iframe
         src="https://maps.google.com/maps?q=Sedgefield%20Academy%20of%20Excellence&t=&z=15&ie=UTF8&iwloc=&output=embed"
         frameborder="0"
