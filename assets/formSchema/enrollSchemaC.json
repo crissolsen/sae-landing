@@ -105,13 +105,8 @@
       "errorClass" : "errors"
     },
     {
-      "type":"hidden",
-      "name":"_captcha",
-      "value":"false"
-  },
-    {
       "type": "submit",
-      "text" : "next",
+      "label" : "Next",
       "class": "submit-button mt-6"
     }
   ]

@@ -1,13 +1,14 @@
 <template>
   <div v-if="!success" style="min-height: 50vh">
-    <div
+  <!-- Use in dev if you want to see all forms -->
+    <!-- <div
       class="bg-red-400 p-4 h-10 w-20 m-4"
       v-for="(showPosition, i) in possiblePositions"
       :key="i"
       @click="(position = showPosition), (applicationSelected = true)"
     >
       {{ showPosition }}
-    </div>
+    </div> -->
     <div
       v-if="!applicationSelected"
       class="
@@ -189,6 +190,8 @@ import schemaF from "~/assets/formSchema/enrollSchemaF.json";
 import schemaG from "~/assets/formSchema/enrollSchemaG.json";
 import schemaH from "~/assets/formSchema/enrollSchemaH.json";
 
+import FormAutoFill from "../node_modules/form-autofill/dist/globals/main.js"
+
 export default {
   data() {
     return {
@@ -224,7 +227,12 @@ export default {
   },
   methods: {
     async submitForm() {
+      let typeOfApplication = {
+        name: "Type of Application",
+        value: this.applicationSelectedType
+      }
       let formInfo = {
+        ...typeOfApplication,
         ...this.values,
         ...this.values2,
         ...this.values3,
@@ -248,12 +256,16 @@ export default {
         .catch((e) => console.log(e));
     },
     applicationType(data) {
+    FormAutoFill.fill()
+
       console.log(data);
       this.applicationSelected = true;
       this.applicationSelectedType = data;
       this.position = this.applicationTypes[data][0];
     },
     checkPosition(currentPos) {
+    FormAutoFill.fill()
+
       let arrayToCheck = this.applicationTypes[this.applicationSelectedType];
       console.log(arrayToCheck);
       for (let i = 0; i <= arrayToCheck.length; i++) {
@@ -268,6 +280,9 @@ export default {
       }
     },
   },
+  mounted() {
+    console.log(FormAutoFill.fill)
+  }
 };
 </script>
 

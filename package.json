@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "form-autofill": "^0.2.0",
     "postcss": "^8.4.4"
   }
 }

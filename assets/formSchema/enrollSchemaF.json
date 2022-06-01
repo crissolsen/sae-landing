@@ -29,22 +29,8 @@
         "errorClass" : "errors"
       },
       {
-        "label": "Acceptance of fees per hour for Casual Learner ",
-        "name": "Extra lesson accept fees",
-        "type":"checkbox",
-        "validation": "required",
-        "class": "labels",
-        "inputClass": "inputs",
-        "errorClass" : "errors"
-      },
-      {
-      "type":"hidden",
-      "name":"_captcha",
-      "value":"false"
-  },
-      {
         "type": "submit",
-        "text" : "next",
+        "Label" : "Next",
         "class": "submit-button mt-6"
       }
 ]
