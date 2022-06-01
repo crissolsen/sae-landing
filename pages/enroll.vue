@@ -176,7 +176,7 @@
     </div>
   </div>
   <div v-else>
-    Thank you for your enrollment submission. We'll get back to you shortly.
+    <h2 class="text-center text-4xl pt-8">Thank you for your application submission. We'll get back to you shortly.</h2>
   </div>
 </template>
 
