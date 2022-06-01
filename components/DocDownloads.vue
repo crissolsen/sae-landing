@@ -33,7 +33,7 @@ export default {
                 {
                     id: 3,
                     name: "Medical Disclaimer",
-                    file: "New Medical Disclaimer Form 2022.docx",
+                    file: "New Medical Disclaimer Form 2022 .docx",
                 }
             ]
         }
