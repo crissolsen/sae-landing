@@ -48,18 +48,23 @@ export default {
         {
           id: 1,
           title: "About Us",
-          link: "about-us",
+          link: "/about-us",
         },
         {
           id: 2,
           title: "Contact Us",
-          link: "contact",
+          link: "/contact",
         },
         {
           id: 3,
           title: "Apply Now",
-          link: 'enroll'
-        }
+          link: '/enroll'
+        },
+        // {
+        //   id: 4,
+        //   title: "Login",
+        //   link: "online.sedge-academy.co.za"
+        // }
       ],
       showLinks: false
     };
