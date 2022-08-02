@@ -30,8 +30,8 @@
     </div>
     <div>
       <h4 class="text-lg">Contact Details:</h4>
-      <a href="tel:+27834465508">Marcia 083 446 5508</a>
-      <a href="tel:+27849168429">Richard 084 916 8429</a>
+      <a href="tel:27834465508">Marcia 083 446 5508</a>
+      <a href="tel:27849168429">Richard 084 916 8429</a>
       <a href="mailto:sedge.ae@gmail.com">Email: sedge.ae@gmail.com</a>
       <div class="flex gap-4 py-4">
         <a href="https://www.facebook.com/sedge.ae" target="_blank"
