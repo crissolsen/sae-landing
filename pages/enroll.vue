@@ -243,7 +243,7 @@ export default {
       this.$axios.defaults.headers.post["Content-Type"] = "application/json";
       const submitForm = await this.$axios
         .post(
-          "https://formsubmit.co/fe0534e16eb7e999e8d2461ce48f3360",
+          "https://formsubmit.co/sedge.ae@gmail.com",
           formInfo
         )
         .then((res) =>

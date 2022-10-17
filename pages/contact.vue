@@ -2,7 +2,7 @@
 <template>
   <form
     class="w-11/12 md:w-1/2 mt-6 mx-auto max-w-md"
-    action="https://formsubmit.co/fe0534e16eb7e999e8d2461ce48f3360"
+    action="https://formsubmit.co/sedge.ae@gmail.com"
     method="POST"
     v-if="!sent"
   >
